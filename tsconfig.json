@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "./app/static/dist",
+    "rootDir": "./app/static", // Update the rootDir to include the directory where intermediate.tsx is located
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react", // Enable JSX
+    "jsxFactory": "h", // Use Preact's h function
+    "jsxFragmentFactory": "Fragment" // Use Preact's Fragment
+  },
+  "include": [
+    // "app/static/scripts/**/*.ts",
+    "app/static/**/*.tsx" // Include .tsx files
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
