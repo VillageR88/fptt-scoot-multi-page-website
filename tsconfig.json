@@ -17,7 +17,13 @@
     "tailwind.config.js", // Add this line to include the Tailwind config file
     "webpack.config.mjs", // Add this line to include the Webpack config file
     "postcss.config.js", // Add this line to include the PostCSS config file
+    "assets.d.ts"
   ],
+  "paths": {
+    "@/*": [
+      "./*"
+    ]
+  },
   "exclude": [
     "node_modules"
   ]

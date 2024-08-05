@@ -1,4 +1,7 @@
 import ButtonGetScootin from '../components/ButtonGetScootin';
+import patternLine from '../../assets/patterns/line.svg';
+import patternRightArrow from '../../assets/patterns/right-arrow.svg';
+import patternWhiteCircles from '../../assets/patterns/white-circles.svg';
 
 const box1Items = {
   title: 'Scooter sharing made simple',
@@ -17,14 +20,14 @@ export default function Block1() {
       <div className="relative flex w-full max-w-[665px] flex-col items-center gap-[40px]">
         <h1 className="max-w-[500px] self-end">{box1Items.title}</h1>
         <div className="flex items-center gap-[57px]">
-          <img className="h-fit w-[203px]" src="./static/assets/patterns/line.svg" alt="" />
+          <img className="h-fit w-[203px]" src={patternLine as string} alt="" />
           <p className="max-w-[405px] text-white">{box1Items.description}</p>
         </div>
         <ButtonGetScootin />
       </div>
       <div className="relative mb-[157px] mr-[-48px] flex w-full max-w-[783px] items-end gap-[100px] self-end">
-        <img className="h-[137px] w-[446px]" src="./static/assets/patterns/right-arrow.svg" alt="" />
-        <img className="h-[63px] w-[234px]" src="./static/assets/patterns/white-circles.svg" alt="" />
+        <img className="h-[137px] w-[446px]" src={patternRightArrow as string} alt="" />
+        <img className="h-[63px] w-[234px]" src={patternWhiteCircles as string} alt="" />
       </div>
     </div>
   );

@@ -40,36 +40,6 @@ eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=w
 
 /***/ }),
 
-/***/ "./app/static/assets/patterns/line.svg":
-/*!*********************************************!*\
-  !*** ./app/static/assets/patterns/line.svg ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"2fa898a3c6c2a00310d7ebb62a710edc.svg\");\n\n//# sourceURL=webpack://fptt-scoot-multi-page-website/./app/static/assets/patterns/line.svg?");
-
-/***/ }),
-
-/***/ "./app/static/assets/patterns/right-arrow.svg":
-/*!****************************************************!*\
-  !*** ./app/static/assets/patterns/right-arrow.svg ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"dd7044690c0469aff3644a134394d9a3.svg\");\n\n//# sourceURL=webpack://fptt-scoot-multi-page-website/./app/static/assets/patterns/right-arrow.svg?");
-
-/***/ }),
-
-/***/ "./app/static/assets/patterns/white-circles.svg":
-/*!******************************************************!*\
-  !*** ./app/static/assets/patterns/white-circles.svg ***!
-  \******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"747e8a648a9ebce8c193a062aff296d1.svg\");\n\n//# sourceURL=webpack://fptt-scoot-multi-page-website/./app/static/assets/patterns/white-circles.svg?");
-
-/***/ }),
-
 /***/ "./node_modules/preact/dist/preact.module.js":
 /*!***************************************************!*\
   !*** ./node_modules/preact/dist/preact.module.js ***!
@@ -216,7 +186,7 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
   \******************************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports[\"default\"] = Block1;\nvar jsx_runtime_1 = __webpack_require__(/*! preact/jsx-runtime */ \"./node_modules/preact/jsx-runtime/dist/jsxRuntime.module.js\");\nvar ButtonGetScootin_1 = __importDefault(__webpack_require__(/*! ../components/ButtonGetScootin */ \"./app/static/pages/components/ButtonGetScootin.tsx\"));\nvar line_svg_1 = __importDefault(__webpack_require__(/*! ../../assets/patterns/line.svg */ \"./app/static/assets/patterns/line.svg\"));\nvar right_arrow_svg_1 = __importDefault(__webpack_require__(/*! ../../assets/patterns/right-arrow.svg */ \"./app/static/assets/patterns/right-arrow.svg\"));\nvar white_circles_svg_1 = __importDefault(__webpack_require__(/*! ../../assets/patterns/white-circles.svg */ \"./app/static/assets/patterns/white-circles.svg\"));\nvar box1Items = {\n    title: 'Scooter sharing made simple',\n    description: 'Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!',\n};\nfunction Block1() {\n    return ((0, jsx_runtime_1.jsxs)(\"div\", { className: \"relative flex h-[650px] w-screen max-w-[1440px] items-center justify-between\", children: [(0, jsx_runtime_1.jsx)(\"img\", { className: \"absolute top-0 size-full object-cover\", src: \"./static/assets/images/home-hero-desktop.jpg\", alt: \"\" }), (0, jsx_runtime_1.jsxs)(\"div\", { className: \"relative flex w-full max-w-[665px] flex-col items-center gap-[40px]\", children: [(0, jsx_runtime_1.jsx)(\"h1\", { className: \"max-w-[500px] self-end\", children: box1Items.title }), (0, jsx_runtime_1.jsxs)(\"div\", { className: \"flex items-center gap-[57px]\", children: [(0, jsx_runtime_1.jsx)(\"img\", { className: \"h-fit w-[203px]\", src: line_svg_1.default, alt: \"\" }), (0, jsx_runtime_1.jsx)(\"p\", { className: \"max-w-[405px] text-white\", children: box1Items.description })] }), (0, jsx_runtime_1.jsx)(ButtonGetScootin_1.default, {})] }), (0, jsx_runtime_1.jsxs)(\"div\", { className: \"relative mb-[157px] mr-[-48px] flex w-full max-w-[783px] items-end gap-[100px] self-end\", children: [(0, jsx_runtime_1.jsx)(\"img\", { className: \"h-[137px] w-[446px]\", src: right_arrow_svg_1.default, alt: \"\" }), (0, jsx_runtime_1.jsx)(\"img\", { className: \"h-[63px] w-[234px]\", src: white_circles_svg_1.default, alt: \"\" })] })] }));\n}\n\n\n//# sourceURL=webpack://fptt-scoot-multi-page-website/./app/static/pages/home/Block1.tsx?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports[\"default\"] = Block1;\nvar jsx_runtime_1 = __webpack_require__(/*! preact/jsx-runtime */ \"./node_modules/preact/jsx-runtime/dist/jsxRuntime.module.js\");\nvar ButtonGetScootin_1 = __importDefault(__webpack_require__(/*! ../components/ButtonGetScootin */ \"./app/static/pages/components/ButtonGetScootin.tsx\"));\nvar line_svg_1 = __importDefault(__webpack_require__(Object(function webpackMissingModule() { var e = new Error(\"Cannot find module '../assets/patterns/line.svg'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())));\nvar box1Items = {\n    title: 'Scooter sharing made simple',\n    description: 'Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!',\n};\nfunction Block1() {\n    return ((0, jsx_runtime_1.jsxs)(\"div\", { className: \"relative flex h-[650px] w-screen max-w-[1440px] items-center justify-between\", children: [(0, jsx_runtime_1.jsx)(\"img\", { className: \"absolute top-0 size-full object-cover\", src: \"./static/assets/images/home-hero-desktop.jpg\", alt: \"\" }), (0, jsx_runtime_1.jsxs)(\"div\", { className: \"relative flex w-full max-w-[665px] flex-col items-center gap-[40px]\", children: [(0, jsx_runtime_1.jsx)(\"h1\", { className: \"max-w-[500px] self-end\", children: box1Items.title }), (0, jsx_runtime_1.jsxs)(\"div\", { className: \"flex items-center gap-[57px]\", children: [(0, jsx_runtime_1.jsx)(\"img\", { className: \"h-fit w-[203px]\", src: line_svg_1.default, alt: \"\" }), (0, jsx_runtime_1.jsx)(\"p\", { className: \"max-w-[405px] text-white\", children: box1Items.description })] }), (0, jsx_runtime_1.jsx)(ButtonGetScootin_1.default, {})] }), (0, jsx_runtime_1.jsxs)(\"div\", { className: \"relative mb-[157px] mr-[-48px] flex w-full max-w-[783px] items-end gap-[100px] self-end\", children: [(0, jsx_runtime_1.jsx)(\"img\", { className: \"h-[137px] w-[446px]\", src: \"./static/assets/patterns/right-arrow.svg\", alt: \"\" }), (0, jsx_runtime_1.jsx)(\"img\", { className: \"h-[63px] w-[234px]\", src: \"./static/assets/patterns/white-circles.svg\", alt: \"\" })] })] }));\n}\n\n\n//# sourceURL=webpack://fptt-scoot-multi-page-website/./app/static/pages/home/Block1.tsx?");
 
 /***/ }),
 
@@ -321,18 +291,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -347,29 +305,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src;
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) {
-/******/ 					var i = scripts.length - 1;
-/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
-/******/ 				}
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
