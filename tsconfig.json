@@ -12,11 +12,11 @@
     "jsxImportSource": "preact",
   },
   "include": [
-    // "app/static/scripts/**/*.ts",
     "app/static/**/*.tsx",
     ".eslintrc.cjs",
     "tailwind.config.js", // Add this line to include the Tailwind config file
-    "webpack.config.js" // Add this line to include the Webpack config file
+    "webpack.config.mjs", // Add this line to include the Webpack config file
+    "postcss.config.js", // Add this line to include the PostCSS config file
   ],
   "exclude": [
     "node_modules"
