@@ -2,6 +2,7 @@ import { h, Fragment } from "preact";
 import { useState, useEffect } from "preact/hooks";
 import Router from "preact-router";
 import Home from "./pages/page"; // Import Home component
+import Navbar from "./pages/components/Navbar"; // Import Navbar component
 
 
 export function App() {
@@ -17,7 +18,7 @@ export function App() {
 
     return (
         <>
-            <nav>navbar</nav>
+            <Navbar />
             <Router>
                 <Home path="/" />
             </Router>

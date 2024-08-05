@@ -5,8 +5,8 @@ interface HomeProps {
 
 const Home = ({ path }: HomeProps) => {
     return (
-        <main>
-            <h1 className='text-red-500'>Home Page</h1>
+        <main className="mb-auto flex flex-col items-center max-w-[1440px]">
+            <h1>Home Page</h1>
             <p>Welcome to the Home Page!</p>
         </main>
     );

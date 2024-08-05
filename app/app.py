@@ -6,9 +6,8 @@ app = Flask(__name__, static_folder="static", template_folder="templates")
 
 def metadata():
     return {
-        "title": "flask-preact-typescript-tailwind-template",
-        "description": "A simple Flask app",
-        "author": "John Doe",
+        "title": "Scoot multi-page website",
+        "description": "Scoot multi-page website",
     }
 
 
