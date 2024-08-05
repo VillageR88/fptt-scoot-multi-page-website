@@ -1,12 +1,12 @@
 /** @jsxImportSource preact */
 import { render } from 'preact';
 import Router from 'preact-router';
-import Home from './page'; // Import Home component
+import Home from './page';
 import About from './about/page';
 import Location from './location/page';
 import Careers from './careers/page';
-import Navbar from '../components/Navbar'; // Import Navbar component
-import '../css/globals.css';
+import Navbar from './components/Navbar';
+import './globals.css';
 
 document.body.className = 'min-h-screen w-full flex flex-col items-center justify-space-between';
 

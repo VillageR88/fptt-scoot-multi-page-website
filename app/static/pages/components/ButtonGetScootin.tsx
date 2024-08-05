@@ -1,3 +1,5 @@
+/** @jsxImportSource preact */
+
 export default function ButtonGetScootin() {
   return (
     <button
