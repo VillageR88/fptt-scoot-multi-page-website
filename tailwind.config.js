@@ -4,7 +4,11 @@ module.exports = {
     "./app/static/**/*.{js,jsx,ts,tsx,html}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        mono: ['"Space Mono"', 'monospace'],
+      },
+    },
   },
   plugins: [],
 };
