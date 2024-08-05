@@ -1,4 +1,3 @@
-/** @jsxImportSource preact */
 import { render } from 'preact';
 import Router from 'preact-router';
 import Home from './page';

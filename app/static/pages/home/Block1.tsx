@@ -1,4 +1,3 @@
-/** @jsxImportSource preact */
 import ButtonGetScootin from '../components/ButtonGetScootin';
 
 const box1Items = {

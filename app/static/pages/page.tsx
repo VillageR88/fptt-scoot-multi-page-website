@@ -1,4 +1,3 @@
-/** @jsxImportSource preact */
 import type { FunctionComponent } from 'preact';
 import Block1 from './home/Block1';
 

@@ -1,4 +1,3 @@
-/** @jsxImportSource preact */
 import type { FunctionComponent } from 'preact';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
