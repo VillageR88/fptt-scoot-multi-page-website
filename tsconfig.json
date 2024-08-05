@@ -14,7 +14,9 @@
   },
   "include": [
     // "app/static/scripts/**/*.ts",
-    "app/static/**/*.tsx" // Include .tsx files
+    "app/static/**/*.tsx",
+    ".eslintrc.cjs",
+    "tailwind.config.js" // Add this line to include the Tailwind config file
   ],
   "exclude": [
     "node_modules"
