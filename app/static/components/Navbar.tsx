@@ -1,5 +1,6 @@
 import { h } from 'preact';
 import { Link } from 'preact-router/match';
+import ButtonGetScootin from './ButtonGetScootin';
 
 export default function Navbar() {
   return (
@@ -19,12 +20,7 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-        <button
-          className="h-[53px] w-[180px] border-2 border-[#FCB72B] bg-[#FCB72B] text-[15px] leading-[25px] text-[#FFFFFF] transition hover:bg-white hover:text-[#FCB72B]"
-          type="button"
-        >
-          Get Scootin
-        </button>
+        <ButtonGetScootin />
       </div>
     </nav>
   );

@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+  @apply text-[56px] font-bold leading-[56px] tracking-[-2.5px] text-white;
+}
+
+p {
+  @apply text-[15px] font-normal leading-[25px] tracking-normal;
+}

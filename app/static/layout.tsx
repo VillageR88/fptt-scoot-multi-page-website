@@ -4,13 +4,13 @@ import Home from './pages/page'; // Import Home component
 import About from './pages/about/page';
 import Contact from './pages/contact/page';
 
-import Navbar from './pages/components/Navbar'; // Import Navbar component
+import Navbar from './components/Navbar'; // Import Navbar component
 
 export function App() {
   return (
     <>
       <Navbar />
-      <main className="mb-auto   flex max-w-[1440px] flex-col items-center">
+      <main className="mb-auto flex max-w-[1440px] flex-col items-center">
         <Router>
           <Home path="/" />
           <About path="/about" />
