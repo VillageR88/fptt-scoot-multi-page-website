@@ -9,13 +9,13 @@ export default function Navbar() {
 					<img src="./static/assets/logo.svg" alt="logo" />
 					<ul className="flex gap-[32px] leading-[25px] font-bold text-[#939CAA] *:transition hover:*:text-[#FCB72B]">
 						<li>
-							<Link href="./">Home</Link>
+							<Link href="/">Home</Link>
 						</li>
 						<li>
-							<Link href="./about">About</Link>
+							<Link href="/about">About</Link>
 						</li>
 						<li>
-							<Link href="./contact">Contact</Link>
+							<Link href="/contact">Contact</Link>
 						</li>
 					</ul>
 				</div>
