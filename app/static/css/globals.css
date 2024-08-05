@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+a {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700; /* Ensure the bold weight is applied */
+}
+
 h1 {
   @apply text-[56px] font-bold leading-[56px] tracking-[-2.5px] text-white;
 }

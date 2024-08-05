@@ -1,8 +1,9 @@
-import { h, Fragment } from 'preact';
+/** @jsxImportSource preact */
 import Router from 'preact-router';
 import Home from './pages/page'; // Import Home component
 import About from './pages/about/page';
-import Contact from './pages/contact/page';
+import Location from './pages/location/page';
+import Careers from './pages/careers/page';
 
 import Navbar from './components/Navbar'; // Import Navbar component
 
@@ -14,7 +15,8 @@ export function App() {
         <Router>
           <Home path="/" />
           <About path="/about" />
-          <Contact path="/contact" />
+          <Location path="/location" />
+          <Careers path="/careers" />
         </Router>
       </main>
       <footer>footer</footer>

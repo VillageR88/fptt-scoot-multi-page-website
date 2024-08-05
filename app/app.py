@@ -21,8 +21,13 @@ def about():
     return render_template("index.html", metadata=metadata())
 
 
-@app.route("/contact")
-def contact():
+@app.route("/location")
+def location():
+    return render_template("index.html", metadata=metadata())
+
+
+@app.route("/careers")
+def careers():
     return render_template("index.html", metadata=metadata())
 
 

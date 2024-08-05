@@ -8,9 +8,8 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "jsx": "react", // Enable JSX
-    "jsxFactory": "h", // Use Preact's h function
-    "jsxFragmentFactory": "Fragment" // Use Preact's Fragment
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
   },
   "include": [
     // "app/static/scripts/**/*.ts",

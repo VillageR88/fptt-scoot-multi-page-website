@@ -1,8 +1,7 @@
-import { h } from 'preact';
+/** @jsxImportSource preact */
+import type { FunctionComponent } from 'preact';
 import ButtonGetScootin from '../components/ButtonGetScootin';
-interface ThisProps {
-  path: string;
-}
+
 const box1Items = {
   title: 'Scooter sharing made simple',
   description:
@@ -10,7 +9,7 @@ const box1Items = {
 };
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-const Home = ({ path }: ThisProps) => {
+const Home: FunctionComponent = ({ path }) => {
   return (
     <div className="relative flex h-[650px] w-screen max-w-[1440px] items-center justify-between">
       <img
@@ -18,10 +17,11 @@ const Home = ({ path }: ThisProps) => {
         src="./static/assets/images/home-hero-desktop.jpg"
         alt=""
       />
-      <div className="relative w-full max-w-[665px]">
-        <h1>{box1Items.title}</h1>
-        <div className="flex">
-          <p className="text-white">{box1Items.description}</p>
+      <div className="relative flex w-full max-w-[665px] flex-col items-center gap-[40px]">
+        <h1 className="max-w-[500px] self-end">{box1Items.title}</h1>
+        <div className="flex items-center gap-[57px]">
+          <img className="h-fit w-[203px]" src="./static/assets/patterns/line.svg" alt="" />
+          <p className="max-w-[405px] text-white">{box1Items.description}</p>
         </div>
         <ButtonGetScootin />
       </div>

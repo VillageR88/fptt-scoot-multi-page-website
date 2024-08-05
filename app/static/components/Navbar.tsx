@@ -1,4 +1,3 @@
-import { h } from 'preact';
 import { Link } from 'preact-router/match';
 import ButtonGetScootin from './ButtonGetScootin';
 
@@ -10,13 +9,13 @@ export default function Navbar() {
           <img src="./static/assets/logo.svg" alt="logo" />
           <ul className="flex gap-[32px] font-bold leading-[25px] text-[#939CAA] *:transition hover:*:text-[#FCB72B]">
             <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
               <Link href="/about">About</Link>
             </li>
             <li>
-              <Link href="/contact">Contact</Link>
+              <Link href="/location">Location</Link>
+            </li>
+            <li>
+              <Link href="/careers">Careers</Link>
             </li>
           </ul>
         </div>
