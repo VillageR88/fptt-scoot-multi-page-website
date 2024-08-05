@@ -16,6 +16,16 @@ def index():
     return render_template("index.html", metadata=metadata())
 
 
+@app.route("/about")
+def about():
+    return render_template("index.html", metadata=metadata())
+
+
+@app.route("/contact")
+def contact():
+    return render_template("index.html", metadata=metadata())
+
+
 @app.route("/robots.txt")
 def robots_txt():
     try:
