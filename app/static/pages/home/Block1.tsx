@@ -3,7 +3,7 @@ import patternLine from '../../assets/patterns/line.svg';
 import patternRightArrow from '../../assets/patterns/right-arrow.svg';
 import patternWhiteCircles from '../../assets/patterns/white-circles.svg';
 
-const box1Items = {
+const boxItems = {
   title: 'Scooter sharing made simple',
   description:
     'Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!',
@@ -18,10 +18,10 @@ export default function Block1() {
         alt=""
       />
       <div className="relative flex w-full max-w-[665px] flex-col items-center gap-[40px]">
-        <h1 className="max-w-[500px] self-end">{box1Items.title}</h1>
+        <h1 className="max-w-[500px] self-end">{boxItems.title}</h1>
         <div className="flex items-center gap-[57px]">
           <img className="h-fit w-[203px]" src={patternLine as string} alt="" />
-          <p className="max-w-[405px] text-white">{box1Items.description}</p>
+          <p className="max-w-[405px] text-white">{boxItems.description}</p>
         </div>
         <ButtonGetScootin />
       </div>
