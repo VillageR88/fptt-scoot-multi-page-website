@@ -7,7 +7,7 @@ import Careers from './careers/page';
 import Navbar from './components/Navbar';
 import './globals.css';
 
-document.body.className = 'min-h-screen w-full flex flex-col items-center justify-space-between';
+document.body.className = 'min-h-screen w-full flex flex-col items-center justify-space-between overflow-x-clip';
 
 function App() {
   return (

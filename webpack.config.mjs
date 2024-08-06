@@ -65,17 +65,18 @@ const config = {
     ],
   },
   plugins: [
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     new HtmlWebpackPlugin({
       template: './app/templates/index.html', // Adjust the path to your Flask template
     }),
     new webpack.HotModuleReplacementPlugin(),
   ],
-  devServer: {
-    contentBase: _resolve(__dirname, 'app/static/dist'),
-    hot: true,
-    open: true,
-    port: 3000, // You can change the port if needed
-  },
+  // devServer: {
+  //   contentBase: _resolve(__dirname, 'app/static/dist'),
+  //   hot: true,
+  //   open: true,
+  //   port: 3000, // You can change the port if needed
+  // },
 };
 
 export default config;
