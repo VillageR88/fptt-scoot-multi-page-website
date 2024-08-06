@@ -39,7 +39,7 @@ export default function Block2() {
                 <img width={96} height={96} src={item.icon} alt="" />
                 <div className="line h-[15px] w-[284px] bg-[#E5ECF4]" />
               </div>
-              <h4 className="mt-[40px] text-[#495567]">{item.title}</h4>
+              <h2 className="h4 mt-[40px] text-[#495567]">{item.title}</h2>
               <p className="mt-[27px] max-w-[350px] text-[#939CAA]">{item.description}</p>
             </li>
           ))}
