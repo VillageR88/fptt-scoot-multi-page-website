@@ -39,7 +39,7 @@ const boxItems = [
 
 export default function Block3() {
   return (
-    <ul className=" mt-[200px] flex w-[2168px] flex-col gap-[160px] ">
+    <ul className=" my-[200px] flex w-[2168px] flex-col gap-[160px]">
       {boxItems.map((item, index) => (
         <li
           className={`${index % 2 ? 'flex-row-reverse self-start' : 'flex-row self-end'} flex items-center gap-[220px]`}
@@ -50,7 +50,9 @@ export default function Block3() {
               <h2 className="text-[#495567]">{item.title}</h2>
               <p className="text-[#939CAA]">{item.description}</p>
             </section>
-            <button type="button">Learn More</button>
+            <button className="buttonType1" type="button">
+              Learn More
+            </button>
           </div>
           <div
             className={`${item._2ndDivClassExtension} ${index % 2 ? 'flex-row-reverse' : 'flex-row'} relative flex gap-[64px]`}

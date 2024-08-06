@@ -5,6 +5,7 @@ import About from './about/page';
 import Location from './location/page';
 import Careers from './careers/page';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import './globals.css';
 
 document.body.className = 'min-h-screen w-full flex flex-col items-center justify-space-between overflow-x-clip';
@@ -21,7 +22,7 @@ function App() {
           <Careers path="/careers" />
         </Router>
       </main>
-      <footer>footer</footer>
+      <Footer />
     </>
   );
 }
