@@ -25,7 +25,7 @@ export default function Block1() {
         </div>
         <ButtonGetScootin />
       </div>
-      <div className="relative mb-[157px] mr-[-48px] flex w-full max-w-[783px] items-end gap-[100px] self-end">
+      <div className="relative mb-[calc(157px+8px)] mr-[-48px] flex w-full max-w-[783px] items-end gap-[100px] self-end">
         <img className="h-[137px] w-[446px]" src={patternRightArrow as string} alt="" />
         <img className="h-[63px] w-[234px]" src={patternWhiteCircles as string} alt="" />
       </div>

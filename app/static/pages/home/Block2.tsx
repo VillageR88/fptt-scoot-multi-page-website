@@ -29,8 +29,8 @@ export default function Block2() {
   return (
     <div className="mt-[160px] h-[291px] w-full max-w-[1275px] self-start">
       <div className="flex">
-        <div className="flex h-[96px] items-center">
-          <div className="h-[15px] w-[165px] bg-[#E5ECF4]" />
+        <div className="relative flex h-[96px] items-center">
+          <div className="absolute right-0 h-[15px] w-screen bg-[#E5ECF4]" />
         </div>
         <ul className="flex">
           {boxItems.map((item) => (

@@ -42,3 +42,7 @@ li:has(.line):last-child .line {
 .buttonType1 {
   @apply h-[53px] w-[180px] border-2 border-[#FCB72B] bg-[#FCB72B] text-[15px] leading-[25px] text-[#FFFFFF] transition hover:bg-transparent hover:text-[#FCB72B];
 }
+
+.buttonStore {
+  @apply h-[56px] w-[159px] bg-[#E5ECF4] rounded-[4px]
+}
