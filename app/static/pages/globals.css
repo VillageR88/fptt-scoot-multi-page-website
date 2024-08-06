@@ -44,5 +44,12 @@ li:has(.line):last-child .line {
 }
 
 .buttonStore {
-  @apply h-[56px] w-[159px] bg-[#E5ECF4] rounded-[4px]
+  @apply h-[56px] w-[159px] rounded-[4px] bg-[#E5ECF4];
+}
+
+nav .logo {
+  fill: #495567;
+}
+footer .logo {
+  fill: white;
 }

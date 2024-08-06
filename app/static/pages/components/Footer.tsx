@@ -1,6 +1,7 @@
 import IconFacebook from './IconFacebook';
 import IconTwitter from './IconTwitter';
 import IconInstagram from './IconInstagram';
+import NavbarBlock1 from './NavbarBlock1';
 
 const socialIcons = [
   { component: <IconFacebook />, key: 'facebook' },
@@ -27,7 +28,7 @@ export default function Footer() {
       </div>
       <div className="flex h-[96px] w-full items-center bg-[#333A44]">
         <div className="mx-auto flex w-full max-w-[1100px] items-center justify-between">
-          <div>box1</div>
+          <NavbarBlock1 />
           <ul className="flex w-fit items-center gap-[18px]">
             {socialIcons.map(({ component, key }) => (
               <li className="transition" key={key}>
