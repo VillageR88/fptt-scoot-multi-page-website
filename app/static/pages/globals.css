@@ -22,6 +22,10 @@ h1 {
   @apply text-[56px] font-bold leading-[56px] tracking-[-2.5px] text-white;
 }
 
+h2 {
+  @apply text-[48px] font-bold leading-[48px] tracking-[-2.14px];
+}
+
 h4,
 .h4 {
   @apply text-[24px] font-bold leading-[28px] tracking-[-1.07px];
@@ -35,6 +39,7 @@ li:has(.line):last-child .line {
   display: none;
 }
 
-button {
+button,
+.button {
   @apply h-[53px] w-[180px] border-2 border-[#FCB72B] bg-[#FCB72B] text-[15px] leading-[25px] text-[#FFFFFF] transition hover:bg-transparent hover:text-[#FCB72B];
 }
