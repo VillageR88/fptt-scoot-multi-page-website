@@ -30,9 +30,9 @@ export default function Block2() {
     <div className="mt-[160px] h-[291px] w-full max-w-[1275px] self-start">
       <div className="flex">
         <div className="relative flex h-[96px] items-center">
-          <div className="absolute right-0 h-[15px] w-screen bg-[#E5ECF4]" />
+          <div className="absolute right-[-165px] h-[15px] w-screen max-w-[500px] bg-gradient-to-r from-transparent via-[#E5ECF4] to-[#E5ECF4]" />
         </div>
-        <ul className="flex">
+        <ul className="ml-[165px] flex">
           {boxItems.map((item) => (
             <li key={item.title}>
               <div className="flex h-[96px] items-center">
