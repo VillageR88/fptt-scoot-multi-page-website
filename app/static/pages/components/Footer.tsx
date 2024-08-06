@@ -1,10 +1,11 @@
+import { Link } from 'preact-router';
 import IconFacebook from './IconFacebook';
 import IconTwitter from './IconTwitter';
 import IconInstagram from './IconInstagram';
 import NavbarBlock1 from './NavbarBlock1';
 import IconAppStore from '../../assets/icons/iconApple.svg';
 import IconGooglePlay from '../../assets/icons/iconGooglePlay.svg';
-import { Link } from 'preact-router';
+import patternSemiCircles from '../../assets/patterns/semi-circles.svg';
 
 const storeIcons = [
   {
@@ -32,7 +33,8 @@ const socialIcons = [
 export default function Footer() {
   return (
     <footer className="flex w-full flex-col">
-      <div className="flex h-[300px] w-full items-center justify-between bg-[#495567]">
+      <div className="relative mx-auto flex h-[300px]  w-full  items-center justify-center bg-[#495567]">
+        <img src={patternSemiCircles as string} alt="" className="pointer-events-none absolute bottom-0 mr-[-600px]" />
         <div className="mx-auto flex h-[96px] w-full max-w-[1100px] items-center justify-between">
           <h2 className="max-w-[415px] text-white">Sign up and Scoot off today</h2>
           <ul className="flex gap-[18px]">
