@@ -1,6 +1,8 @@
 import { resolve as _resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { dirname } from 'node:path';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import webpack from 'webpack';
 
 // Define __filename and __dirname for ES modules
 const __filename = fileURLToPath(import.meta.url);
@@ -50,10 +52,29 @@ const config = {
         use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
       {
-        test: /\.svg$/,
-        use: 'file-loader',
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+            },
+          },
+        ],
       },
     ],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './app/templates/index.html', // Adjust the path to your Flask template
+    }),
+    new webpack.HotModuleReplacementPlugin(),
+  ],
+  devServer: {
+    contentBase: _resolve(__dirname, 'app/static/dist'),
+    hot: true,
+    open: true,
+    port: 3000, // You can change the port if needed
   },
 };
 
