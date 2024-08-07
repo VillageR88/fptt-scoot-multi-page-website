@@ -14,8 +14,7 @@ h5,
 h6,
 button,
 a {
-  font-family: 'Space Mono', monospace;
-  font-weight: 700; /* Ensure the bold weight is applied */
+  @apply font-mono font-bold;
 }
 
 h1 {
@@ -36,7 +35,7 @@ p {
 }
 
 li:has(.line):last-child .line {
-  display: none;
+  @apply hidden;
 }
 
 .buttonType1 {
@@ -54,9 +53,18 @@ ul > li:nth-of-type(2) > .buttonStore {
 }
 
 nav .logo {
-  fill: #495567;
+  @apply h-[20px] w-[75.5px] fill-[#495567] md:h-[29px] md:w-[108px];
 }
 
 footer .logo {
-  fill: white;
+  @apply fill-white;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    @apply text-[40px] leading-[40px] tracking-[-1.79px];
+  }
+  h2 {
+    @apply text-[32px] leading-[32px] tracking-[-1.43px];
+  }
 }

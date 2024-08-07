@@ -33,7 +33,7 @@ const socialIcons = [
 export default function Footer() {
   return (
     <footer className="flex w-full flex-col overflow-x-clip">
-      <div className="relative flex h-[300px] w-full items-center justify-center  bg-[#495567] px-[40px]">
+      <div className="relative flex h-[320px] w-full items-center justify-center bg-[#495567]  px-[40px] md:h-[300px]">
         <img
           src={patternSemiCircles as string}
           alt=""
