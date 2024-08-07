@@ -11,12 +11,16 @@ const boxItems = {
 
 export default function Block1() {
   return (
-    <div className="relative flex min-h-[700px] w-full flex-col items-center justify-start gap-[40px] pt-[137px] xl:min-h-[650px] xl:flex-row xl:justify-between xl:pt-0">
-      <img
-        className="absolute top-0 size-full w-full object-cover object-right"
-        src="./static/assets/images/home-hero-desktop.jpg"
-        alt=""
-      />
+    <div className="relative flex min-h-[650px] w-full flex-col items-center justify-start gap-[40px] pt-[137px] md:min-h-[700px] xl:min-h-[650px] xl:flex-row xl:justify-between xl:pt-0">
+      <picture className="absolute right-0 top-0 size-full">
+        {/* <source media="(max-width: 480px)" srcSet="./static/assets/images/home-hero-mobile.jpg" /> */}
+        {/* <source media="(max-width: 540px)" srcSet="./static/assets/images/home-hero-tablet.jpg" /> */}
+        <img
+          className="size-full object-cover object-[-470px_100%]  md:object-[100%_100%]"
+          src="./static/assets/images/home-hero-desktop.jpg"
+          alt=""
+        />
+      </picture>
       <div className="relative flex w-full max-w-[665px] flex-col items-center gap-[40px] text-center xl:text-left">
         <h1 className="max-w-[500px] xl:self-end">{boxItems.title}</h1>
         <div className="flex items-center gap-[57px]">

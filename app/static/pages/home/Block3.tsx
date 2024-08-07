@@ -13,8 +13,8 @@ const boxItems = [
     description:
       "The Scoot app is available with riding telemetry. This means it can show you your average speed, how long you've been using the scooter, your traveling distance, and many more things all in an easy to use app.",
     _1stDivClassExtension: '',
-    _2ndDivClassExtension: 'ml-[410px] mr-[350px] xl:mx-0',
-    patternClassExtension: 'left-[-124px] bottom-0',
+    _2ndDivClassExtension: 'md:ml-[410px] md:mr-[350px] xl:mx-0',
+    patternClassExtension: 'md:left-[-124px] bottom-0',
   },
   {
     liClassExtension: 'xl:mr-[165px] ',
@@ -24,8 +24,8 @@ const boxItems = [
     description:
       'Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities over the coming year.',
     _1stDivClassExtension: '',
-    _2ndDivClassExtension: 'mr-[410px] ml-[350px] xl:mx-0',
-    patternClassExtension: 'right-[260px]',
+    _2ndDivClassExtension: 'md:mr-[410px] md:ml-[350px] xl:mx-0',
+    patternClassExtension: 'md:right-[260px]',
   },
   {
     liClassExtension: 'xl:ml-[165px]',
@@ -35,8 +35,8 @@ const boxItems = [
     description:
       'Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a month.',
     _1stDivClassExtension: '',
-    _2ndDivClassExtension: 'ml-[410px] mr-[350px] xl:mx-0',
-    patternClassExtension: 'left-[255px] top-[85px]',
+    _2ndDivClassExtension: 'md:ml-[410px] md:mr-[350px] xl:mx-0',
+    patternClassExtension: 'md:left-[255px] top-[85px]',
   },
 ];
 
@@ -60,8 +60,14 @@ export default function Block3() {
           <div
             className={`${item._2ndDivClassExtension} ${index % 2 ? 'flex-row-reverse' : 'flex-row'} relative flex gap-[64px]`}
           >
-            <img width={445} height={445} className="size-[445px] rounded-full" src={item.imageSrc} alt="" />
-            <div className="size-[445px] min-w-[445px] rounded-full bg-[#E5ECF4]" />
+            <img
+              width={445}
+              height={445}
+              className="size-[311px] rounded-full md:size-[445px]"
+              src={item.imageSrc}
+              alt=""
+            />
+            <div className="hidden size-[445px] min-w-[445px] rounded-full bg-[#E5ECF4] md:block" />
             <img className={`absolute ${item.patternClassExtension} h-auto min-w-fit`} src={item.patternSrc} alt="" />
           </div>
         </li>
