@@ -8,13 +8,13 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import './globals.css';
 
-document.body.className = 'min-h-screen w-full flex flex-col items-center justify-space-between overflow-x-clip';
+document.body.className = 'min-h-screen w-full flex  mx-auto flex-col items-center justify-space-between';
 
 function App() {
   return (
     <>
       <Navbar />
-      <main className="mb-auto flex max-w-[1440px] flex-col items-center ">
+      <main className="mb-auto flex w-full max-w-fit flex-col items-center overflow-x-clip ">
         <Router>
           <Home path="/" />
           <About path="/about" />
@@ -30,5 +30,4 @@ function App() {
 function Body() {
   return <App />;
 }
-
 render(<Body />, document.body);

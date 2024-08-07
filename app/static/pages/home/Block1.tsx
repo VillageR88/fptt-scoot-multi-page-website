@@ -11,7 +11,7 @@ const boxItems = {
 
 export default function Block1() {
   return (
-    <div className="relative flex min-h-[650px] w-full flex-col items-center justify-start gap-[40px] pt-[137px] md:min-h-[700px] xl:min-h-[650px] xl:flex-row xl:justify-between xl:pt-0">
+    <div className="relative flex min-h-[650px] w-full max-w-[1440px] flex-col items-center justify-start gap-[40px] pt-[137px] md:min-h-[700px] xl:min-h-[650px] xl:flex-row xl:justify-between xl:pt-0">
       <picture className="absolute right-0 top-0 size-full">
         {/* <source media="(max-width: 480px)" srcSet="./static/assets/images/home-hero-mobile.jpg" /> */}
         {/* <source media="(max-width: 540px)" srcSet="./static/assets/images/home-hero-tablet.jpg" /> */}
