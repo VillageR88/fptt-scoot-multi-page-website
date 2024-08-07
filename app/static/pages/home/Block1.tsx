@@ -11,21 +11,21 @@ const boxItems = {
 
 export default function Block1() {
   return (
-    <div className="relative flex h-[650px] w-screen max-w-[1440px] items-center justify-between">
+    <div className="relative flex min-h-[700px] w-full flex-col items-center justify-start gap-[40px] pt-[137px] xl:min-h-[650px] xl:flex-row xl:justify-between xl:pt-0">
       <img
-        className="absolute top-0 size-full object-cover"
+        className="absolute top-0 size-full w-full object-cover object-right"
         src="./static/assets/images/home-hero-desktop.jpg"
         alt=""
       />
-      <div className="relative flex w-full max-w-[665px] flex-col items-center gap-[40px]">
-        <h1 className="max-w-[500px] self-end">{boxItems.title}</h1>
+      <div className="relative flex w-full max-w-[665px] flex-col items-center gap-[40px] text-center xl:text-left">
+        <h1 className="max-w-[500px] xl:self-end">{boxItems.title}</h1>
         <div className="flex items-center gap-[57px]">
-          <img className="h-fit w-[203px]" src={patternLine as string} alt="" />
+          <img className="hidden h-fit w-[203px] xl:block" src={patternLine as string} alt="" />
           <p className="max-w-[405px] text-white">{boxItems.description}</p>
         </div>
         <ButtonGetScootin />
       </div>
-      <div className="relative mb-[calc(157px+8px)] mr-[-48px] flex w-full max-w-[783px] items-end gap-[100px] self-end">
+      <div className="relative flex w-full items-end justify-center  gap-[245px] xl:mb-[calc(157px+8px)] xl:mr-[-48px] xl:max-w-[783px] xl:gap-[100px] xl:self-end">
         <img className="h-[137px] w-[446px]" src={patternRightArrow as string} alt="" />
         <img className="h-[63px] w-[234px]" src={patternWhiteCircles as string} alt="" />
       </div>

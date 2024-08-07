@@ -27,26 +27,24 @@ const boxItems = [
 
 export default function Block2() {
   return (
-    <div className="mt-[160px] h-[291px] w-full max-w-[1275px] self-start">
-      <div className="flex">
-        <div className="relative flex h-[96px] items-center">
-          <div className="absolute right-[-165px] h-[15px] w-screen max-w-[500px] bg-gradient-to-r from-transparent via-[#E5ECF4] to-[#E5ECF4]" />
-        </div>
-        <ul className="ml-[165px] flex">
-          {boxItems.map((item) => (
-            <li key={item.title}>
-              <div className="flex h-[96px] items-center">
-                <img width={96} height={96} src={item.icon} alt="" />
-                <div className="line h-[15px] w-[284px] bg-[#E5ECF4]" />
-              </div>
-              <section className="flex flex-col gap-[27px]">
-                <h2 className="h4 mt-[40px] text-[#495567]">{item.title}</h2>
-                <p className="max-w-[350px] text-[#939CAA]">{item.description}</p>
-              </section>
-            </li>
-          ))}
-        </ul>
+    <div className="flex h-fit w-full max-w-[573px] flex-col xl:mt-[160px] xl:h-[291px] xl:max-w-[1275px] xl:flex-row xl:self-start">
+      <div className="relative flex w-[96px] justify-center xl:h-[96px] xl:w-fit xl:items-center">
+        <div className="h-[118px] w-[15px] bg-[#E5ECF4] from-transparent via-[#E5ECF4] to-[#E5ECF4] xl:absolute xl:right-[-165px] xl:h-[15px] xl:w-screen xl:max-w-[500px] xl:bg-transparent xl:bg-gradient-to-r" />
       </div>
+      <ul className="flex w-full flex-col items-center xl:ml-[165px] xl:flex-row">
+        {boxItems.map((item) => (
+          <li className="flex w-full justify-between xl:flex-col" key={item.title}>
+            <div className="flex flex-col items-center xl:h-[96px] xl:flex-row">
+              <img width={96} height={96} src={item.icon} alt="" />
+              <div className="line h-[74px] w-[15px] bg-[#E5ECF4] xl:h-[15px] xl:w-[284px]" />
+            </div>
+            <section className="flex flex-col gap-[27px]">
+              <h2 className="h4 text-[#495567] xl:mt-[40px]">{item.title}</h2>
+              <p className="max-w-[398px] text-[#939CAA] xl:max-w-[350px]">{item.description}</p>
+            </section>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
