@@ -6,7 +6,7 @@ import patternRightArrow from '../../assets/patterns/right-arrow.svg';
 
 const boxItems = [
   {
-    liClassExtension: 'xl:ml-[165px] ',
+    liClassExtension: ' xl:ml-[165px]',
     imageSrc: imageTelemetry as string,
     patternSrc: patternLeftDownwardArrow as string,
     title: 'Easy to use riding telemetry',
@@ -42,10 +42,10 @@ const boxItems = [
 
 export default function Block3() {
   return (
-    <ul className="mb-[104px] mt-[145px] flex w-full flex-col items-center gap-[128px] xl:mx-12 xl:my-[200px] xl:gap-[160px] ">
+    <ul className="mb-[104px] mt-[145px] flex w-fit flex-col items-center gap-[128px] xl:my-[200px] xl:gap-[160px] ">
       {boxItems.map((item, index) => (
         <li
-          className={`${index % 2 ? 'flex-col-reverse self-start xl:flex-row-reverse' : 'flex-col-reverse self-end xl:flex-row'} flex items-center gap-[56px] xl:gap-[220px] ${item.liClassExtension}`}
+          className={`${index % 2 ? 'flex-col-reverse self-start xl:flex-row-reverse' : 'flex-col-reverse self-end xl:flex-row'} flex max-w-[1275px] items-center gap-[56px] xl:gap-[120px] ${item.liClassExtension}`}
           key={item.title}
         >
           <div className={`flex flex-col items-center gap-[40px] xl:items-start ${item._1stDivClassExtension}`}>
