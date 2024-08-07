@@ -32,14 +32,14 @@ const socialIcons = [
 
 export default function Footer() {
   return (
-    <footer className="flex w-full flex-col">
-      <div className="relative mx-auto flex h-[300px] w-full items-center justify-center  bg-[#495567] px-[40px]">
+    <footer className="flex w-full flex-col overflow-x-clip">
+      <div className="relative flex h-[300px] w-full items-center justify-center  bg-[#495567] px-[40px]">
         <img
           src={patternSemiCircles as string}
           alt=""
           className="pointer-events-none absolute bottom-0 h-auto min-w-fit xl:mr-[-600px]"
         />
-        <div className="mx-auto flex w-full max-w-[1100px] flex-col items-center justify-between gap-[40px] text-center xl:flex-row xl:text-left">
+        <div className="flex w-full max-w-[1100px] flex-col items-center justify-between gap-[40px] text-center xl:flex-row xl:text-left">
           <h2 className="max-w-[415px] text-white">Sign up and Scoot off today</h2>
           <ul className="flex gap-[18px]">
             {storeIcons.map((item) => (

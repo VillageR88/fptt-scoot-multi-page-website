@@ -27,11 +27,11 @@ const boxItems = [
 
 export default function Block2() {
   return (
-    <div className="flex h-fit w-full max-w-[573px] flex-col xl:mt-[160px] xl:h-[291px] xl:max-w-[1275px] xl:flex-row xl:self-start">
+    <div className="flex h-fit w-full max-w-[573px] flex-col xl:mt-[160px] xl:h-[291px] xl:max-w-[1440px] xl:flex-row">
       <div className="relative flex w-[96px] justify-center xl:h-[96px] xl:w-fit xl:items-center">
         <div className="h-[118px] w-[15px] bg-[#E5ECF4] from-transparent via-[#E5ECF4] to-[#E5ECF4] xl:absolute xl:right-[-165px] xl:h-[15px] xl:w-screen xl:max-w-[500px] xl:bg-transparent xl:bg-gradient-to-r" />
       </div>
-      <ul className="flex w-full flex-col items-center xl:ml-[165px] xl:flex-row">
+      <ul className="flex w-full max-w-[1110px] flex-col items-center xl:ml-[165px] xl:flex-row">
         {boxItems.map((item) => (
           <li className="flex w-full justify-between xl:flex-col" key={item.title}>
             <div className="flex flex-col items-center xl:h-[96px] xl:flex-row">
