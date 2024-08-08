@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <main className="mx-auto mb-auto flex w-full max-w-[2140px] flex-col items-center overflow-x-clip ">
+      <main className="mx-auto mb-auto flex w-full  flex-col items-center overflow-x-clip ">
         <Router>
           <Home path={routes.home} />
           <About path={routes.about} />
