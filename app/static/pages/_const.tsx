@@ -3,3 +3,10 @@ export const navLinks = [
   { href: '/location', text: 'Location' },
   { href: '/careers', text: 'Careers' },
 ];
+
+export const routes = {
+  home: '/',
+  about: '/about',
+  location: '/location',
+  careers: '/careers',
+};

@@ -13,6 +13,7 @@
   },
   "include": [
     "app/static/**/*.tsx",
+    "app/static/**/*.ts",
     ".eslintrc.cjs",
     "tailwind.config.js", // Add this line to include the Tailwind config file
     "webpack.config.mjs", // Add this line to include the Webpack config file

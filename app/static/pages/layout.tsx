@@ -6,6 +6,7 @@ import Location from './location/page';
 import Careers from './careers/page';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import { routes } from './_const';
 import './globals.css';
 
 document.body.className = 'min-h-dvh  md:min-h-screen flex flex-col items-center justify-space-between';
@@ -16,10 +17,10 @@ function App() {
       <Navbar />
       <main className="mx-auto mb-auto flex w-full max-w-[2140px] flex-col items-center overflow-x-clip ">
         <Router>
-          <Home path="/" />
-          <About path="/about" />
-          <Location path="/location" />
-          <Careers path="/careers" />
+          <Home path={routes.home} />
+          <About path={routes.about} />
+          <Location path={routes.location} />
+          <Careers path={routes.careers} />
         </Router>
       </main>
       <Footer />
