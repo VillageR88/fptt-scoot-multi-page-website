@@ -14,6 +14,7 @@ const config = {
   output: {
     filename: 'bundle.js',
     path: _resolve(__dirname, 'app/static/dist'),
+    assetModuleFilename: 'images/[hash][ext][query]', // Custom output filename for assets
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
@@ -53,26 +54,18 @@ const config = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[path][name].[ext]',
-            },
-          },
-        ],
+        type: 'asset',
       },
     ],
   },
   plugins: [
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     new HtmlWebpackPlugin({
       template: './app/templates/index.html', // Adjust the path to your Flask template
     }),
     new webpack.HotModuleReplacementPlugin(),
   ],
   // devServer: {
-  //   contentBase: _resolve(__dirname, 'app/static/dist'),
+  //   static: _resolve(__dirname, 'app/static/dist'),
   //   hot: true,
   //   open: true,
   //   port: 3000, // You can change the port if needed

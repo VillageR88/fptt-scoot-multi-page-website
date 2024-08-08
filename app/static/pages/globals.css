@@ -39,7 +39,7 @@ li:has(.line):last-child .line {
 }
 
 .buttonType1 {
-  @apply h-[53px] w-[180px] border-2 border-[#FCB72B] bg-[#FCB72B] text-[15px] leading-[25px] text-[#FFFFFF] transition hover:bg-transparent hover:text-[#FCB72B];
+  @apply flex h-[53px] w-[180px] items-center justify-center border-2 border-[#FCB72B] bg-[#FCB72B] text-[15px] leading-[25px] text-[#FFFFFF] transition hover:bg-transparent hover:text-[#FCB72B];
 }
 
 .buttonStore {
@@ -55,6 +55,25 @@ ul > li:nth-of-type(2) > .buttonStore {
 nav .logo {
   @apply h-[20px] w-[75.5px] fill-[#495567] md:h-[29px] md:w-[108px];
 }
+
+nav .navLinks {
+  @apply hidden md:flex;
+}
+
+nav .buttonType1 {
+  @apply hidden md:flex;
+}
+
+input[type='checkbox'] {
+  @apply z-20  cursor-pointer appearance-none object-cover;
+  background-image: url('../assets/icons/hamburger.svg');
+  content: url('../assets/icons/hamburger.svg');
+}
+
+/* input[type='checkbox']:checked {
+  background-image: url('../assets/icons/close.svg');
+  content: url('../assets/icons/close.svg');
+} */
 
 footer .logo {
   @apply fill-white;
