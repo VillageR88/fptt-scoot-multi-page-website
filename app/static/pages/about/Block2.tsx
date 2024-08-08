@@ -24,7 +24,7 @@ const items = [
 ];
 export default function Block2() {
   return (
-    <div className="mb-[120px] flex w-full max-w-[1110px] flex-col items-center gap-[48px]">
+    <div className="mb-[145px] flex w-full max-w-[1110px] flex-col items-center gap-[48px] md:mb-[120px]">
       <h2 className="text-[#495567]">Our values</h2>
       <ul className="flex w-full justify-between">
         {items.map((item, index) => (
