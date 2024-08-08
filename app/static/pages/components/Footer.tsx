@@ -33,7 +33,7 @@ const socialIcons = [
 export default function Footer() {
   return (
     <footer className="flex w-full flex-col overflow-x-clip">
-      <div className="relative flex h-[320px] w-full items-center justify-center bg-[#495567]  px-[40px] md:h-[300px]">
+      <div className="relative flex min-h-[320px] w-full items-center justify-center bg-[#495567] px-[40px]  py-[24px] md:min-h-[300px]">
         <img
           src={patternSemiCircles as string}
           alt=""
@@ -41,7 +41,7 @@ export default function Footer() {
         />
         <div className="flex w-full max-w-[1100px] flex-col items-center justify-between gap-[40px] text-center xl:flex-row xl:text-left">
           <h2 className="max-w-[415px] text-white">Sign up and Scoot off today</h2>
-          <ul className="flex gap-[18px]">
+          <ul className="flex flex-wrap justify-center gap-[18px]">
             {storeIcons.map((item) => (
               <li key={item.key}>
                 <Link
@@ -61,8 +61,8 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="flex h-[96px] w-full items-center bg-[#333A44] px-[40px]">
-        <div className="mx-auto flex w-full max-w-[1100px] items-center justify-between">
+      <div className="flex h-[438px] w-full items-center bg-[#333A44] px-[40px] md:h-[96px]">
+        <div className="mx-auto flex w-full max-w-[1100px] flex-col items-center justify-between gap-[85px] md:flex-row">
           <NavbarBlock1 />
           <ul className="flex w-fit items-center gap-[18px]">
             {socialIcons.map(({ component, key }) => (

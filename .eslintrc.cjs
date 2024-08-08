@@ -1,13 +1,16 @@
 /* eslint-env node */
 module.exports = {
+  parser: '@typescript-eslint/parser',
   extends: [
+    'eslint:recommended',
     'plugin:@typescript-eslint/strict-type-checked',
     'plugin:@typescript-eslint/stylistic-type-checked',
+    'plugin:@typescript-eslint/recommended',
     'plugin:tailwindcss/recommended',
+    'plugin:prettier/recommended',
     'prettier',
   ],
-  plugins: ['@typescript-eslint', 'prettier'],
-  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint', 'prettier', 'tailwindcss'],
   root: true,
   parserOptions: {
     project: true,
@@ -20,5 +23,9 @@ module.exports = {
         endOfLine: 'auto',
       },
     ],
+    'tailwindcss/classnames-order': 'warn',
+    'tailwindcss/no-custom-classname': 'off',
+    'tailwindcss/no-contradicting-classname': 'error',
+    'no-multi-spaces': 'error',
   },
 };

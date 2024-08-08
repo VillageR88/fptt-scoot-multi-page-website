@@ -65,9 +65,12 @@ nav .buttonType1 {
 }
 
 input[type='checkbox'] {
-  @apply z-20  cursor-pointer appearance-none object-cover;
-  background-image: url('../assets/icons/hamburger.svg');
+  @apply appearance-none object-cover hover:cursor-pointer;
   content: url('../assets/icons/hamburger.svg');
+}
+
+input[type='checkbox']:checked {
+  content: url('../assets/icons/close.svg');
 }
 
 /* input[type='checkbox']:checked {
