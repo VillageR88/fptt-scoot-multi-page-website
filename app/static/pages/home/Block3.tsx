@@ -4,6 +4,8 @@ import imageNearYou from '../../assets/images/near-you.jpg';
 import imagePayments from '../../assets/images/payments.jpg';
 import patternLeftDownwardArrow from '../../assets/patterns/left-downward-arrow.svg';
 import patternRightArrow from '../../assets/patterns/right-arrow.svg';
+import { Link } from 'preact-router';
+
 const boxItems = [
   {
     imageSrc: imageTelemetry as string,
@@ -12,6 +14,11 @@ const boxItems = [
     description:
       "The Scoot app is available with riding telemetry. This means it can show you your average speed, how long you've been using the scooter, your traveling distance, and many more things all in an easy to use app.",
     patternClassExtension: 'md:left-[-140px] md:bottom-0 bottom-[-5px]',
+    linkProp: (
+      <Link className="buttonType1" href="#">
+        Learn More
+      </Link>
+    ),
   },
   {
     imageSrc: imageNearYou as string,
@@ -20,6 +27,11 @@ const boxItems = [
     description:
       'Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities over the coming year.',
     patternClassExtension: 'right-[100px] md:right-[260px] mt:top-0 top-[50px]',
+    linkProp: (
+      <Link className="buttonType1" href="#">
+        Learn More
+      </Link>
+    ),
   },
   {
     imageSrc: imagePayments as string,
@@ -28,6 +40,11 @@ const boxItems = [
     description:
       'Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a month.',
     patternClassExtension: 'md:left-[255px] left-[100px] md:top-[85px] top-[-10px]',
+    linkProp: (
+      <Link className="buttonType1" href="#">
+        Learn More
+      </Link>
+    ),
   },
 ];
 

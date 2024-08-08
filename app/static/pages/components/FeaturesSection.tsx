@@ -1,3 +1,5 @@
+import type { JSXInternal } from 'preact/src/jsx';
+
 interface FeaturesSectionProps {
   boxItems: {
     imageSrc: string;
@@ -5,6 +7,7 @@ interface FeaturesSectionProps {
     title: string;
     description: string;
     patternClassExtension: string;
+    linkProp?: JSXInternal.Element;
   }[];
 }
 
@@ -21,9 +24,7 @@ export default function FeaturesSection({ boxItems }: FeaturesSectionProps) {
               <h2 className="w-full text-[#495567] md:w-[450px] xl:w-[445px]">{item.title}</h2>
               <p className="text-[#939CAA]">{item.description}</p>
             </section>
-            <button className="buttonType1" type="button">
-              Learn More
-            </button>
+            {item.linkProp}
           </div>
           <div
             className={`${index % 2 ? 'flex-row-reverse md:ml-[350px] md:mr-[410px]' : 'flex-row md:ml-[410px] md:mr-[350px]'} relative flex gap-[64px] xl:mx-0`}

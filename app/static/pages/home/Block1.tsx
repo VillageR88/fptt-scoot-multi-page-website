@@ -21,7 +21,7 @@ export default function Block1() {
           alt=""
         />
       </picture>
-      <div className="relative flex  w-full max-w-[665px] flex-col items-center gap-[40px] px-[32px] text-center md:px-0 xl:flex-[80%] xl:text-left">
+      <div className="relative flex w-full max-w-[665px] flex-col items-center gap-[40px]  text-center md:px-0 xl:flex-[80%] xl:text-left">
         <h1 className="max-w-[500px] xl:self-end">{boxItems.title}</h1>
         <div className="flex w-fit items-center gap-[57px] xl:mr-[40px]">
           <img className="hidden h-fit w-full max-w-[203px] xl:block" src={patternLine as string} alt="" />
