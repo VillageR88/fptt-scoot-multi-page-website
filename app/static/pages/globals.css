@@ -25,6 +25,7 @@ h2 {
   @apply text-[48px] font-bold leading-[48px] tracking-[-2.14px];
 }
 
+h3,
 h4,
 .h4 {
   @apply text-[20px] font-bold leading-[28px] tracking-[-0.89px] md:text-[24px] md:tracking-[-1.07px];
