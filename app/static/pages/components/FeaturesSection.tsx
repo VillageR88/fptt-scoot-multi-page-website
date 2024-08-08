@@ -11,9 +11,15 @@ interface FeaturesSectionProps {
   }[];
 }
 
-export default function FeaturesSection({ boxItems }: FeaturesSectionProps) {
+export default function FeaturesSection({
+  boxItems,
+  ulClassExtension,
+}: {
+  boxItems: FeaturesSectionProps['boxItems'];
+  ulClassExtension: string;
+}) {
   return (
-    <ul className="mb-[120px] mt-[145px] flex w-fit flex-col items-center gap-[128px] md:mb-[104px] xl:my-[200px] xl:gap-[160px] ">
+    <ul className={`${ulClassExtension} flex w-fit flex-col items-center gap-[128px] md:mb-[104px] xl:gap-[160px]`}>
       {boxItems.map((item, index) => (
         <li
           className={`${index % 2 ? 'flex-col-reverse self-start xl:mr-[165px] xl:flex-row-reverse' : 'flex-col-reverse self-end xl:ml-[165px] xl:flex-row'} flex max-w-[1275px] items-center gap-[56px] xl:gap-[120px]`}

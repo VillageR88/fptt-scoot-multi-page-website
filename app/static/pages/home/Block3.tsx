@@ -50,5 +50,5 @@ const boxItems = [
 ];
 
 export default function Block3() {
-  return <FeaturesSection boxItems={boxItems} />;
+  return <FeaturesSection boxItems={boxItems} ulClassExtension="mb-[120px] xl:my-[200px] mt-[145px]" />;
 }
