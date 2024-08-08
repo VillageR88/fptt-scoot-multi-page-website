@@ -1,11 +1,12 @@
 import type { FunctionComponent } from 'preact';
+import InnerHeader from '../components/InnerHeader';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const Location: FunctionComponent = ({ path }) => {
   return (
-    <div>
-      <p>This is the location page.</p>
-    </div>
+    <>
+      <InnerHeader path={path} />
+    </>
   );
 };
 
