@@ -27,7 +27,7 @@ h2 {
 
 h4,
 .h4 {
-  @apply text-[24px] font-bold leading-[28px] tracking-[-1.07px];
+  @apply text-[20px] font-bold leading-[28px] tracking-[-0.89px] md:text-[24px] md:tracking-[-1.07px];
 }
 
 p {

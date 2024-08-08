@@ -42,15 +42,15 @@ const boxItems = [
 
 export default function Block3() {
   return (
-    <ul className="mb-[104px] mt-[145px] flex w-fit flex-col items-center gap-[128px] xl:my-[200px] xl:gap-[160px] ">
+    <ul className="mb-[120px] mt-[145px] flex w-fit flex-col items-center gap-[128px] md:mb-[104px] xl:my-[200px] xl:gap-[160px] ">
       {boxItems.map((item, index) => (
         <li
           className={`${index % 2 ? 'flex-col-reverse self-start xl:flex-row-reverse' : 'flex-col-reverse self-end xl:flex-row'} flex max-w-[1275px] items-center gap-[56px] xl:gap-[120px] ${item.liClassExtension}`}
           key={item.title}
         >
           <div className={`flex flex-col items-center gap-[40px] xl:items-start ${item._1stDivClassExtension}`}>
-            <section className="flex w-[573px] flex-col items-center gap-[24px] text-center xl:mx-0 xl:w-[445px] xl:gap-[27px] xl:text-left">
-              <h2 className="w-[450px] text-[#495567] xl:w-[445px]">{item.title}</h2>
+            <section className="flex w-full max-w-[573px] flex-col items-center gap-[24px] px-[32px] text-center md:px-0 xl:mx-0 xl:w-[445px] xl:gap-[27px] xl:text-left">
+              <h2 className="w-full text-[#495567] md:w-[450px] xl:w-[445px]">{item.title}</h2>
               <p className="text-[#939CAA]">{item.description}</p>
             </section>
             <button className="buttonType1" type="button">
