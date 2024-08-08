@@ -60,17 +60,25 @@ nav .navLinks {
   @apply hidden md:flex;
 }
 
-nav .buttonType1 {
+nav > div:nth-of-type(2) .buttonType1 {
   @apply hidden md:flex;
 }
 
-input[type='checkbox'] {
+#mobileMenu {
   @apply appearance-none object-cover hover:cursor-pointer;
   content: url('../assets/icons/hamburger.svg');
 }
 
-input[type='checkbox']:checked {
+#mobileMenu.open {
   content: url('../assets/icons/close.svg');
+}
+
+body:has(#mobileMenu.open) {
+  @apply min-h-screen overflow-hidden;
+}
+
+nav:has(#mobileMenu) > #mobileMenuList {
+  @apply hidden;
 }
 
 /* input[type='checkbox']:checked {
@@ -83,6 +91,9 @@ footer .logo {
 }
 
 @media (max-width: 768px) {
+  nav:has(#mobileMenu.open) #mobileMenuList {
+    @apply flex;
+  }
   h1 {
     @apply text-[40px] leading-[40px] tracking-[-1.79px];
   }

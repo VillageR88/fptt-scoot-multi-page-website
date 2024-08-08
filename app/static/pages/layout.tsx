@@ -8,8 +8,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import './globals.css';
 
-//how to tell vsc that bellow line is className so i can use auto complete
-document.body.className = 'min-h-screen flex flex-col items-center justify-space-between';
+document.body.className = 'min-h-dvh  md:min-h-screen flex flex-col items-center justify-space-between';
 
 function App() {
   return (
