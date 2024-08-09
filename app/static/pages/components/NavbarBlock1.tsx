@@ -1,5 +1,5 @@
 import { Link } from 'preact-router';
-import { scrollToTop } from '../../_lib/functionsClient';
+import { scrollToTop } from '../_lib/functionsClient';
 import Logo from './Logo';
 
 const items = [

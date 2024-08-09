@@ -1,6 +1,6 @@
 import { Link } from 'preact-router';
-import { scrollToTop } from '../../_lib/functionsClient';
-import { navLinks } from '../../_lib/const';
+import { scrollToTop } from '../_lib/functionsClient';
+import { navLinks } from '../_lib/const';
 import ButtonGetScootin from './ButtonGetScootin';
 
 export default function MobileMenuList({ handleOpen }: { handleOpen: () => void }) {

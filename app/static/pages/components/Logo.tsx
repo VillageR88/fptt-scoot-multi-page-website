@@ -1,7 +1,7 @@
 import { Link } from 'preact-router';
-import { routes } from '../../_lib/const';
-import { scrollToTop } from '../../_lib/functionsClient';
-import { DataContext } from '../../_lib/DataContext';
+import { routes } from '../_lib/const';
+import { scrollToTop } from '../_lib/functionsClient';
+import { DataContext } from '../_lib/DataContext';
 import { useContext } from 'preact/hooks';
 
 export const Logo = () => {

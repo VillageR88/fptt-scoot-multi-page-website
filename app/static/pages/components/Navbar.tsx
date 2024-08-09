@@ -1,7 +1,7 @@
 import ButtonGetScootin from './ButtonGetScootin';
 import NavbarBlock1 from './NavbarBlock1';
 import MobileMenuList from './MobileMenuList';
-import { DataContext } from '../../_lib/DataContext';
+import { DataContext } from '../_lib/DataContext';
 import { useContext } from 'preact/hooks';
 
 export default function Navbar() {
