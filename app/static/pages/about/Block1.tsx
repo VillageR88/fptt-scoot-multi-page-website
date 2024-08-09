@@ -24,5 +24,5 @@ const boxItems = [
 ];
 
 export default function Block1() {
-  return <FeaturesSection boxItems={boxItems} ulClassExtension="mb-[120px] xl:my-[129px] mt-[145px]" />;
+  return <FeaturesSection boxItems={boxItems} ulClassExtension="mb-[120px] xl:my-[129px] mt-[72px] md:mt-[145px]" />;
 }

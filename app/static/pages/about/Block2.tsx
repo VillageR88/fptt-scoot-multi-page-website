@@ -26,7 +26,7 @@ export default function Block2() {
   return (
     <div className="mb-[145px] flex w-full max-w-[1110px] flex-col items-center gap-[48px] md:mb-[120px]">
       <h2 className="text-[#495567]">Our values</h2>
-      <ul className="flex w-full justify-between">
+      <ul className="flex w-full flex-col items-center justify-between gap-[56px] xl:flex-row xl:gap-[30px]">
         {items.map((item, index) => (
           <li key={item.title} className="flex max-w-[350px] flex-col items-center">
             <img width={240} height={240} className="size-[240px] rounded-full" src={item.src} alt="" />
