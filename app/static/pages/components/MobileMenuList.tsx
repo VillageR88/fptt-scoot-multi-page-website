@@ -1,5 +1,6 @@
 import { Link } from 'preact-router';
-import { navLinks } from '../_const';
+import { scrollToTop } from '../functionsClient';
+import { navLinks } from '../const';
 import ButtonGetScootin from './ButtonGetScootin';
 
 export default function MobileMenuList({ handleOpen }: { handleOpen: () => void }) {
@@ -9,7 +10,14 @@ export default function MobileMenuList({ handleOpen }: { handleOpen: () => void 
         <ul className="flex flex-col gap-[24px]">
           {navLinks.map(({ href, text }) => (
             <li key={text}>
-              <Link className="text-[18px] font-bold leading-[25px] text-[#E5ECF4]" onClick={handleOpen} href={href}>
+              <Link
+                className="text-[18px] font-bold leading-[25px] text-[#E5ECF4]"
+                onClick={() => {
+                  handleOpen();
+                  scrollToTop();
+                }}
+                href={href}
+              >
                 {text}
               </Link>
             </li>
