@@ -24,12 +24,18 @@ const items = [
 ];
 export default function Block2() {
   return (
-    <div className="mb-[145px] flex w-full max-w-[1110px] flex-col items-center gap-[48px] md:mb-[120px]">
+    <div className="mb-[145px] flex w-full max-w-[1110px] flex-col items-center gap-[48px] px-[32px] md:mb-[120px] md:px-0">
       <h2 className="text-[#495567]">Our values</h2>
       <ul className="flex w-full flex-col items-center justify-between gap-[56px] xl:flex-row xl:gap-[30px]">
         {items.map((item, index) => (
           <li key={item.title} className="flex max-w-[350px] flex-col items-center">
-            <img width={240} height={240} className="size-[240px] rounded-full" src={item.src} alt="" />
+            <img
+              width={240}
+              height={240}
+              className="size-[240px] min-w-[240px] rounded-full object-cover"
+              src={item.src}
+              alt=""
+            />
             <div className="mt-[-41px] flex size-[96px] items-center justify-center rounded-full bg-[#FCB72B] font-mono text-[24px] font-bold leading-[28px] tracking-[-1.07px] text-[#495567]">
               {(index + 1).toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false })}
             </div>

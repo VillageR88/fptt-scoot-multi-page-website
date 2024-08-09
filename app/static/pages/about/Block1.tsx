@@ -11,7 +11,7 @@ const boxItems = [
     title: 'Mobility for the digital era',
     description:
       'Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost, smart access to scooters at your fingertips.',
-    patternClassExtension: 'md:left-[-130px] md:bottom-[30px] bottom-[-5px]',
+    patternClassExtension: 'md:left-[-130px] md:bottom-[30px] bottom-[20px]',
   },
   {
     imageSrc: imageBetterLiving as string,
@@ -19,7 +19,7 @@ const boxItems = [
     title: 'Better urban living',
     description:
       'We’re helping connect cities and bring people closer together. Our scooters are also fully-electric and we offset the minimal carbon footprint for each ride.',
-    patternClassExtension: 'right-[100px] md:right-[260px] mt:top-0 top-0',
+    patternClassExtension: 'right-[0px] md:right-[260px] mt:top-0 top-[-15px]',
   },
 ];
 
