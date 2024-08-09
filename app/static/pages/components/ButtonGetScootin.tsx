@@ -4,7 +4,7 @@ function handleClick() {
     behavior: 'smooth',
   });
 }
-
+const title = 'Get Scootin';
 export default function ButtonGetScootin({ additionalFunction }: { additionalFunction?: () => void }) {
   return (
     <button
@@ -17,7 +17,7 @@ export default function ButtonGetScootin({ additionalFunction }: { additionalFun
       className="buttonType1"
       type="button"
     >
-      Get Scootin
+      {title}
     </button>
   );
 }

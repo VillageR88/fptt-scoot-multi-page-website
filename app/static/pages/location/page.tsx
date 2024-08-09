@@ -4,6 +4,7 @@ import imageWorldMapDesktop from '../../assets/images/world-map-desktop.png';
 import { Link } from 'preact-router';
 
 const items = {
+  linkTitle: 'Message Us',
   title: 'Your city not listed?',
   description:
     'If you’d like to see Scoot in your hometown, be sure to let us know. We track requests and plan launches based on demand. Feel free to message us by clicking the link or messaging us on social.',
@@ -23,7 +24,7 @@ const Location: FunctionComponent = ({ path }) => {
             <p className="max-w-[445px] text-[#939CAA]">{items.description}</p>
           </section>
           <Link className="buttonType1" href="#">
-            Message Us
+            {items.linkTitle}
           </Link>
         </div>
       </div>

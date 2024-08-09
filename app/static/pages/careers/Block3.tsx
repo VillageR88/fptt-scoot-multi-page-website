@@ -1,6 +1,7 @@
 import { Link } from 'preact-router';
 
 export default function Block3() {
+  const linkTitle = 'Apply';
   const items = [
     { title: 'General Manager', description: 'Jakarta, Indonesia' },
     { title: 'UI/UX Designer', description: 'Yokohama, Japan' },
@@ -25,7 +26,7 @@ export default function Block3() {
             className="flex h-[53px] w-full max-w-[247px] items-center justify-center border-2 border-[#FCB72B] bg-[#FCB72B] text-[15px] leading-[25px] text-[#FFFFFF] transition hover:bg-transparent hover:text-[#FCB72B] md:max-w-[180px]"
             href="#"
           >
-            Apply
+            {linkTitle}
           </Link>
         </li>
       ))}

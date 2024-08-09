@@ -7,6 +7,7 @@ import patternRightArrow from '../../assets/patterns/right-arrow.svg';
 import { routes } from '../_lib/const';
 import { Link } from 'preact-router';
 
+const linkTitle = 'Learn More';
 const boxItems = [
   {
     imageSrc: imageTelemetry as string,
@@ -17,7 +18,7 @@ const boxItems = [
     patternClassExtension: 'md:left-[-140px] md:bottom-0 bottom-[-5px]',
     linkProp: (
       <Link className="buttonType1" href={routes.about}>
-        Learn More
+        {linkTitle}
       </Link>
     ),
   },
@@ -30,7 +31,7 @@ const boxItems = [
     patternClassExtension: 'right-[100px] md:right-[260px] mt:top-0 top-[50px]',
     linkProp: (
       <Link className="buttonType1" href={routes.location}>
-        Learn More
+        {linkTitle}
       </Link>
     ),
   },
@@ -43,7 +44,7 @@ const boxItems = [
     patternClassExtension: 'md:left-[255px] left-[100px] md:top-[85px] top-[-10px]',
     linkProp: (
       <Link className="buttonType1" href={routes.about}>
-        Learn More
+        {linkTitle}
       </Link>
     ),
   },
