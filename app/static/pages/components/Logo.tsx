@@ -1,6 +1,6 @@
 import { Link } from 'preact-router';
-import { routes } from '../const';
-import { scrollToTop } from '../functionsClient';
+import { routes } from '../../_lib/const';
+import { scrollToTop } from '../../_lib/functionsClient';
 
 export const Logo = () => (
   <Link onClick={scrollToTop} href={routes.home}>

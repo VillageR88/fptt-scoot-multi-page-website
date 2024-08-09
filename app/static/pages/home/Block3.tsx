@@ -4,7 +4,7 @@ import imageNearYou from '../../assets/images/near-you.jpg';
 import imagePayments from '../../assets/images/payments.jpg';
 import patternLeftDownwardArrow from '../../assets/patterns/left-downward-arrow.svg';
 import patternRightArrow from '../../assets/patterns/right-arrow.svg';
-import { routes } from '../const';
+import { routes } from '../../_lib/const';
 import { Link } from 'preact-router';
 
 const boxItems = [
