@@ -42,7 +42,7 @@ const PinBox = ({ title, link, mapPosition }: { title: string; link: string; map
 
 export default function Block1() {
   return (
-    <div className="relative flex size-full h-[528px] flex-col items-center md:block md:h-[337px] md:max-h-full md:w-[689px] md:max-w-full xl:h-[543px] xl:w-full">
+    <div className="relative flex size-full h-fit flex-col items-center gap-[40px] md:block md:h-[337px] md:max-h-full md:w-[689px] md:max-w-full xl:h-[543px] xl:w-full">
       <PinBox
         title={items['New York'].title}
         link={items['New York'].link}
@@ -55,8 +55,19 @@ export default function Block1() {
         <source media="(max-width: 768px)" srcSet={imageWorldMapMobile as string} />
         <img src={imageWorldMapDesktop as string} alt="world map" />
       </picture>
-      <ul className="flex flex-col md:hidden">
-        <li>TEST</li>
+      <ul className="flex w-full flex-col gap-[16px] md:hidden">
+        {Object.keys(items).map((key) => (
+          <li className="flex size-full items-center justify-center  bg-[#FCB72B]/15" key={key}>
+            <Link
+              className="flex size-full h-[72px] items-center justify-center text-center"
+              href={items[key as keyof typeof items].link}
+            >
+              <span className="text-[24px] font-bold leading-[28px] tracking-[-1.07px] text-[#495567]">
+                {items[key as keyof typeof items].title}
+              </span>
+            </Link>
+          </li>
+        ))}
       </ul>
     </div>
   );

@@ -37,7 +37,7 @@ export default function Footer() {
         <img
           src={patternSemiCircles as string}
           alt=""
-          className="pointer-events-none absolute bottom-0 h-auto min-w-fit xl:mr-[-600px]"
+          className="pointer-events-none absolute bottom-0 mr-[450px] h-auto min-w-fit md:mr-0 xl:mr-[-600px]"
         />
         <div className="flex w-full max-w-[1100px] flex-col items-center justify-between gap-[40px] text-center xl:flex-row xl:text-left">
           <h2 className="max-w-[415px] text-white">Sign up and Scoot off today</h2>

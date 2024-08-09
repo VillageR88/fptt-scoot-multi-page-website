@@ -75,17 +75,23 @@ nav > div:nth-of-type(2) .buttonType1 {
 }
 
 body:has(#mobileMenu.open) {
-  @apply min-h-screen overflow-hidden;
+  @apply flex min-h-screen overflow-hidden;
+}
+
+#mobileMenuList {
+  @apply pointer-events-none;
+}
+
+#mobileMenuList > div {
+  transition: all 0.5s ease 0s;
+  @apply -translate-x-full;
 }
 
 nav:has(#mobileMenu) > #mobileMenuList {
-  @apply hidden;
-}
+  transition: all 0.5s ease 0s;
 
-/* input[type='checkbox']:checked {
-  background-image: url('../assets/icons/close.svg');
-  content: url('../assets/icons/close.svg');
-} */
+  @apply flex bg-transparent;
+}
 
 footer .logo {
   @apply fill-white;
@@ -116,7 +122,15 @@ footer .logo {
     max-height: 400px;
   }
   nav:has(#mobileMenu.open) #mobileMenuList {
-    @apply flex;
+    @apply bg-black/50 opacity-100;
+  }
+
+  body:has(#mobileMenu.open) #mobileMenuList {
+    @apply pointer-events-auto;
+  }
+
+  nav:has(#mobileMenu.open) #mobileMenuList > div {
+    @apply translate-x-0;
   }
   h1 {
     @apply text-[40px] leading-[40px] tracking-[-1.79px];
