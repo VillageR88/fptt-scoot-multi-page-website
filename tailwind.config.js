@@ -1,11 +1,12 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config}*/
 module.exports = {
-    content: [
-      "./src/**/*.{js,jsx,ts,tsx}",
-      "./public/index.html",
-    ],
-    theme: {
-      extend: {},
+  content: ['./app/static/**/*.{js,jsx,ts,tsx,html}'],
+  theme: {
+    extend: {
+      fontFamily: {
+        mono: ['"Space Mono"', 'monospace'],
+      },
     },
-    plugins: [],
-  };
+  },
+  plugins: [],
+};

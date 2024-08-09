@@ -6,14 +6,28 @@ app = Flask(__name__, static_folder="static", template_folder="templates")
 
 def metadata():
     return {
-        "title": "flask-preact-typescript-tailwind-template",
-        "description": "A simple Flask app",
-        "author": "John Doe",
+        "title": "Scoot multi-page website",
+        "description": "Scoot multi-page website",
     }
 
 
 @app.route("/")
 def index():
+    return render_template("index.html", metadata=metadata())
+
+
+@app.route("/about")
+def about():
+    return render_template("index.html", metadata=metadata())
+
+
+@app.route("/location")
+def location():
+    return render_template("index.html", metadata=metadata())
+
+
+@app.route("/careers")
+def careers():
     return render_template("index.html", metadata=metadata())
 
 

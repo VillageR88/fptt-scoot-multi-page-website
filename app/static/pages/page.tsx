@@ -1,15 +1,17 @@
-import { h } from "preact";
-interface HomeProps {
-    path: string;
-}
+import type { FunctionComponent } from 'preact';
+import Block1 from './home/Block1';
+import Block2 from './home/Block2';
+import Block3 from './home/Block3';
 
-const Home = ({ path }: HomeProps) => {
-    return (
-        <main>
-            <h1 className='text-red-500'>Home Page</h1>
-            <p>Welcome to the Home Page!</p>
-        </main>
-    );
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const Home: FunctionComponent = ({ path }) => {
+  return (
+    <>
+      <Block1 />
+      <Block2 />
+      <Block3 />
+    </>
+  );
 };
 
 export default Home;
