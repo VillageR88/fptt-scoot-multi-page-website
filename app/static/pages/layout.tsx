@@ -1,4 +1,5 @@
 import { render } from 'preact';
+import DataContext from '../_lib/DataContext';
 import Router from 'preact-router';
 import Home from './page';
 import About from './about/page';
@@ -14,16 +15,18 @@ document.body.className = 'min-h-dvh  md:min-h-screen flex flex-col items-center
 function App() {
   return (
     <>
-      <Navbar />
-      <main className="mx-auto mb-auto flex w-full  flex-col items-center overflow-x-clip ">
-        <Router>
-          <Home path={routes.home} />
-          <About path={routes.about} />
-          <Location path={routes.location} />
-          <Careers path={routes.careers} />
-        </Router>
-      </main>
-      <Footer />
+      <DataContext>
+        <Navbar />
+        <main className="mx-auto mb-auto flex w-full  flex-col items-center overflow-x-clip ">
+          <Router>
+            <Home path={routes.home} />
+            <About path={routes.about} />
+            <Location path={routes.location} />
+            <Careers path={routes.careers} />
+          </Router>
+        </main>
+        <Footer />
+      </DataContext>
     </>
   );
 }

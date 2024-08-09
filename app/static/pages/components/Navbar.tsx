@@ -1,10 +1,11 @@
 import ButtonGetScootin from './ButtonGetScootin';
 import NavbarBlock1 from './NavbarBlock1';
 import MobileMenuList from './MobileMenuList';
-import { useRef } from 'preact/hooks';
+import { DataContext } from '../../_lib/DataContext';
+import { useContext } from 'preact/hooks';
 
 export default function Navbar() {
-  const menuButtonRef = useRef<HTMLButtonElement>(null);
+  const { menuButtonRef } = useContext(DataContext);
   function handleOpen() {
     if (menuButtonRef.current) {
       menuButtonRef.current.classList.toggle('open');
