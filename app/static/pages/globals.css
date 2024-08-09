@@ -117,6 +117,10 @@ footer .logo {
     padding-top 0.5s ease;
 }
 
+.buttonLearnMore::after {
+  content: 'Learn More';
+}
+
 @media (max-width: 768px) {
   .visible-paragraph {
     max-height: 400px;

@@ -1,3 +1,4 @@
+import background from '../../assets/images/home-hero-desktop.jpg';
 import ButtonGetScootin from '../components/ButtonGetScootin';
 import patternLine from '../../assets/patterns/line.svg';
 import patternRightArrow from '../../assets/patterns/right-arrow.svg';
@@ -15,11 +16,7 @@ export default function Block1() {
       <picture className="absolute right-0 top-0 size-full">
         {/* <source media="(max-width: 480px)" srcSet="./static/assets/images/home-hero-mobile.jpg" /> */}
         {/* <source media="(max-width: 540px)" srcSet="./static/assets/images/home-hero-tablet.jpg" /> */}
-        <img
-          className="size-full object-cover object-[100%_100%] "
-          src="./static/assets/images/home-hero-desktop.jpg"
-          alt=""
-        />
+        <img className="size-full object-cover object-[100%_100%] " src={background as string} alt="" />
       </picture>
       <div className="relative flex w-full max-w-[665px] flex-col items-center gap-[40px]  text-center md:px-0 xl:flex-[80%] xl:text-left">
         <h1 className="max-w-[500px] xl:self-end">{boxItems.title}</h1>

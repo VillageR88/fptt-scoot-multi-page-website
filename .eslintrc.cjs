@@ -1,5 +1,10 @@
 /* eslint-env node */
 module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+    node: true,
+  },
   parser: '@typescript-eslint/parser',
   extends: [
     'eslint:recommended',

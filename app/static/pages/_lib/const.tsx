@@ -1,12 +1,17 @@
-export const navLinks = [
-  { href: '/about', text: 'About' },
-  { href: '/location', text: 'Location' },
-  { href: '/careers', text: 'Careers' },
-];
+let basePath = '/fptt-scoot-multi-page-website';
+if (process.env.NODE_ENV === 'development') {
+  basePath = '';
+}
 
 export const routes = {
-  home: '/',
-  about: '/about',
-  location: '/location',
-  careers: '/careers',
+  home: `${basePath}/`,
+  about: `${basePath}/about`,
+  location: `${basePath}/location`,
+  careers: `${basePath}/careers`,
 };
+
+export const navLinks = [
+  { href: routes.about, text: 'About' },
+  { href: routes.location, text: 'Location' },
+  { href: routes.careers, text: 'Careers' },
+];

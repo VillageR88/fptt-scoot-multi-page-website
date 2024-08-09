@@ -1,6 +1,6 @@
 import { render } from 'preact';
 import DataContext from './_lib/DataContext';
-import Router from 'preact-router';
+import { Router } from 'preact-router';
 import Home from './page';
 import About from './about/page';
 import Location from './location/page';
@@ -19,7 +19,7 @@ function App() {
         <Navbar />
         <main className="mx-auto mb-auto flex w-full  flex-col items-center overflow-x-clip ">
           <Router>
-            <Home path={routes.home} />
+            <Home path={routes.home} default />
             <About path={routes.about} />
             <Location path={routes.location} />
             <Careers path={routes.careers} />

@@ -1,0 +1,8 @@
+    "lint": "eslint --ext .ts,.tsx app/static",
+    "build": "tsc && webpack && python app/freeze.py",
+    "watch:ts": "tsc --watch",
+    "start:flask": "set FLASK_APP=app.app&& nodemon --exec \"flask run\" --ext py,ts --ignore app/static/js",
+    "start:webpack": "webpack --watch",
+    "start:browser-sync": "browser-sync start --proxy http://127.0.0.1:36969 --files 'app/static/**/*, app/templates/**/*' --port 36969",
+    "start": "concurrently \"npm run start:webpack\" \"npm run start:flask\" \"npm run start:browser-sync\"",
+    "build:css": "postcss src/index.css -o public/index.css"

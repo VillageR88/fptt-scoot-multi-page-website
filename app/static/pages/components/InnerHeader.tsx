@@ -5,26 +5,27 @@ import backgroundCareersDesktop from '../../assets/images/careers-locations-hero
 import backgroundCareersTablet from '../../assets/images/careers-locations-hero-tablet.jpg';
 import backgroundCareersMobile from '../../assets/images/careers-location-hero-mobile.jpg';
 import patternWhiteCircles from '../../assets/patterns/white-circles.svg';
+import { routes } from '../_lib/const';
 
 export default function InnerHeader({ path }: { path?: string }) {
   function processPathToTitle(path: string) {
     switch (path) {
-      case '/about':
+      case routes.about:
         return 'About';
-      case '/location':
+      case routes.location:
         return 'Locations';
-      case '/careers':
+      case routes.careers:
         return 'Careers';
     }
   }
 
   function processPathToSrc(path: string): string[] {
     switch (path) {
-      case '/about':
+      case routes.about:
         return [backgroundAboutDesktop, backgroundAboutTablet, backgroundAboutMobile] as string[];
-      case '/location':
+      case routes.location:
         return [backgroundCareersDesktop, backgroundCareersTablet, backgroundCareersMobile] as string[];
-      case '/careers':
+      case routes.careers:
         return [backgroundCareersDesktop, backgroundCareersTablet, backgroundCareersMobile] as string[];
     }
     return [];

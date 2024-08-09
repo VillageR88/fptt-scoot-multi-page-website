@@ -3,8 +3,8 @@ import { fileURLToPath } from 'node:url';
 import { dirname } from 'node:path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import webpack from 'webpack';
+import Dotenv from 'dotenv-webpack';
 
-// Define __filename and __dirname for ES modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
@@ -13,7 +13,7 @@ const config = {
   entry: './app/static/pages/layout.tsx',
   output: {
     filename: 'bundle.js',
-    path: _resolve(__dirname, 'app/static/dist'),
+    path: _resolve(__dirname, 'app/static/dist'), // Absolute path
     assetModuleFilename: 'images/[hash][ext][query]', // Custom output filename for assets
   },
   resolve: {
@@ -61,15 +61,17 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './app/templates/index.html', // Adjust the path to your Flask template
+      filename: 'index.html', // Output path within the dist directory
+      inject: 'body', // Inject scripts at the end of the body
+      scriptLoading: 'blocking', // Ensure scripts are loaded in the correct order
     }),
     new webpack.HotModuleReplacementPlugin(),
+    new webpack.DefinePlugin({
+      'process.env.GITHUB_PAGES': JSON.stringify(true), // Set this to true for GitHub Pages
+    }),
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+    new Dotenv(), // Add Dotenv plugin to load environment variables
   ],
-  // devServer: {
-  //   static: _resolve(__dirname, 'app/static/dist'),
-  //   hot: true,
-  //   open: true,
-  //   port: 3000, // You can change the port if needed
-  // },
 };
 
 export default config;
