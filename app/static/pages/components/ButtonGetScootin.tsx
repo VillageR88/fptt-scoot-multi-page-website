@@ -5,9 +5,18 @@ function handleClick() {
   });
 }
 
-export default function ButtonGetScootin() {
+export default function ButtonGetScootin({ additionalFunction }: { additionalFunction?: () => void }) {
   return (
-    <button onClick={handleClick} className="buttonType1" type="button">
+    <button
+      onClick={() => {
+        handleClick();
+        if (additionalFunction) {
+          additionalFunction();
+        }
+      }}
+      className="buttonType1"
+      type="button"
+    >
       Get Scootin
     </button>
   );

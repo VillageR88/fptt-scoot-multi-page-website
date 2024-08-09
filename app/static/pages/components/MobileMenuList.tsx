@@ -23,7 +23,7 @@ export default function MobileMenuList({ handleOpen }: { handleOpen: () => void 
             </li>
           ))}
         </ul>
-        <ButtonGetScootin />
+        <ButtonGetScootin additionalFunction={handleOpen} />
       </div>
     </div>
   );
